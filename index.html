@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio - Encriptador</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titulo">Desafio <p id="titulo2">Encriptador</p></h1>
+    </header>
+
+    <main>
+
+        <div class="alerta">
+            <p id="alerta">Alert: No se permiten mayúsculas ni caracteres especiales</p>
+        </div>
+
+
+        <div class="trabajo"> 
+        
+
+            <textarea
+                id="texto-usuario"
+                style="text-transform:lowercase;"
+                onkeyup="bloquearCaracteresEspeciales(this)"
+                placeholder="ingresa aqui el texto para encriptar"
+                required
+            ></textarea>
+
+            <textarea
+                id="texto-cifrado"
+                style="text-transform:lowercase;"
+                onkeyup="bloquearCaracteresEspeciales(this)"
+                placeholder="ingresa el texto para desbloquear"
+                required
+            ></textarea>
+        </div>
+
+        <form>
+
+            <p id="status">Status</p>
+
+            <div class="cajon-btn">
+                
+                <input 
+                    type="button" 
+                    value="CIFRAR" 
+                    onclick="capturarTextoU()"
+                    >  
+
+                <input 
+                    type="button" 
+                    value="DESCIFRAR" 
+                    id="btn-descifrar" 
+                    onclick="desencriptar()"
+                    >
+
+                <input 
+                    type="button" 
+                    value="COPIAR" 
+                    id="btn-copiar"
+                    class="btn"
+                    onclick="copiarTexto()"
+                    
+                    >
+            </div>
+
+
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h3>Creado por <p id="titulo3">Danis E. Maldonado M.</p></h3>
+        <p>Creado Febrero 2024</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

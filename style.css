@@ -1,0 +1,84 @@
+
+body{
+    background: #24262E;
+}
+
+h1,h3{
+    color:white;
+    margin-left: 30px;
+}
+#titulo2{
+    color:#D5AD28
+}
+#titulo3{
+    color:#00D2D4;
+}
+
+
+label h2 {
+    margin-bottom: 5px;
+}
+
+.alerta{
+
+    text-align: center; /* Para centrar el texto dentro del div */
+    margin: 0 auto; /* Para centrar horizontalmente el div */
+    width: 30%; /* Ancho del div, ajusta según tus necesidades */
+    border: 1px solid #ccc; /* Borde */
+    margin-bottom: 20px;
+    background:#2B2D35;
+    color:#D5AD28;
+    border-radius: 20px;
+
+    
+}
+textarea {
+    resize: none;
+    border:none;
+    width: 40%;
+    margin: 10px;
+    background:#2B2D35 ;
+    display: inline-block;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+    border-bottom-left-radius: 40px;
+    color:white;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+
+
+}
+
+.trabajo{
+    text-align: center;
+}
+
+#status{
+    color:#00D2D4;
+    text-align: center;
+}
+
+
+div input{
+    margin: 5px;
+    background:#2B2D35 ;
+    border:1px solid #00D2D4;
+    padding: 8px 15px;
+    cursor:pointer;
+    border-radius: 5px;
+    color:#00D2D4;
+}
+
+.cajon-btn{
+    text-align: center;
+}
+
+div input:hover{
+    background: #00D2D4;
+    color:black;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+
